@@ -1,12 +1,20 @@
-import React from "react"
+import React from 'react';
+import styles from './Blah.module.css';
 
-function TopBanner () {
-    return (
-        <React.Fragment>
-            <img src="./logo192.png" alt="Company Logo"/>
-            <h1>Nate's React Site</h1>
-        </React.Fragment>
-    );
+function TopBanner(props: any) {
+  return (
+    <React.Fragment>
+      <div className="row">
+        <div className="col-2">
+          <img src="./logo192.png" alt="Company Logo" />
+        </div>
+
+        <div className="col align-self-center text-start">
+          <h1 className={styles.h1}>{props.saying}</h1>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 }
 
 export default TopBanner;
