@@ -5,7 +5,7 @@ function TopBanner(props: any) {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="col-2">
+        <div className="col-1">
           <img src="./logo192.png" alt="Company Logo" />
         </div>
 
